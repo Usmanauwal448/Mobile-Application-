@@ -1,0 +1,204 @@
+How many total number of widgetes on flutter
+Flutter has a vast collection of widgets, and the exact number is not fixed, as new widgets are being added with each update. However, I can give you an overview of the main categories and some examples of widgets in each category:
+
+1. *Basic Widgets* (~15): Container, Row, Column, Stack, Padding, Align, etc.
+2. *Material Design Widgets* (~30): Scaffold, AppBar, Button, TextField, ListTile, etc.
+3. *Cupertino Widgets* (~20): CupertinoPageScaffold, CupertinoNavigationBar, CupertinoButton, etc.
+4. *Layout Widgets* (~10): GridView, ListView, CustomScrollView, SliverGrid, etc.
+5. *Input Widgets* (~10): TextField, TextFormField, DropdownButton, Checkbox, etc.
+6. *Dialog and Alert Widgets* (~5): AlertDialog, SimpleDialog, BottomSheet, etc.
+7. *Navigation Widgets* (~5): Navigator, MaterialPageRoute, CupertinoPageRoute, etc.
+8. *Image and Icon Widgets* (~5): Image, Icon, CircleAvatar, etc.
+9. *Animation and Motion Widgets* (~10): AnimatedContainer, AnimatedBuilder, Hero, etc.
+10. *Other Widgets* (~20): WebView, VideoPlayer, MapView, etc.
+
+Keep in mind that these categories are not exhaustive, and some widgets might overlap between categories. Additionally, Flutter also provides a wide range of third-party packages that offer even more widgets.
+
+If I had to give you a rough estimate, I'd say there are around 150-200 built-in widgets in Flutter. However, this number might not reflect the exact count, as new widgets are being added, and some might be deprecated or replaced.
+
+(Q2) list 20 usel widgetes and samples code on flutter?
+Here are 20 commonly used Flutter widgets with sample code:
+
+1. *Container*
+```
+Container(
+  child: Text('Hello'),
+  padding: EdgeInsets.all(20),
+  decoration: BoxDecoration(
+    color: Colors.blue,
+    borderRadius: BorderRadius.circular(10),
+  ),
+)
+```
+
+1. *Text*
+```
+Text(
+  'Hello, World!',
+  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+)
+```
+
+1. *Row*
+```
+Row(
+  children: [
+    Text('Row 1'),
+    Text('Row 2'),
+  ],
+)
+```
+
+1. *Column*
+```
+Column(
+  children: [
+    Text('Column 1'),
+    Text('Column 2'),
+  ],
+)
+```
+
+1. *Stack*
+```
+Stack(
+  children: [
+    Container(color: Colors.red, height: 100, width: 100),
+    Container(color: Colors.blue, height: 50, width: 50),
+  ],
+)
+```
+
+1. *ListView*
+```
+ListView(
+  children: [
+    ListTile(title: Text('Item 1')),
+    ListTile(title: Text('Item 2')),
+  ],
+)
+```
+
+1. *GridView*
+```
+GridView.count(
+  crossAxisCount: 2,
+  children: [
+    Container(color: Colors.red, height: 100, width: 100),
+    Container(color: Colors.blue, height: 100, width: 100),
+  ],
+)
+```
+
+1. *AppBar*
+```
+AppBar(
+  title: Text('App Bar'),
+  actions: [
+    IconButton(icon: Icon(Icons.search), onPressed: () {}),
+  ],
+)
+```
+
+1. *TextField*
+```
+TextField(
+  decoration: InputDecoration(
+    border: OutlineInputBorder(),
+    labelText: 'Username',
+  ),
+)
+```
+
+1. *Button*
+```
+ElevatedButton(
+  onPressed: () {},
+  child: Text('Click me'),
+)
+```
+
+1. *Image*
+```
+Image.network('(link unavailable)')
+```
+
+1. *Icon*
+```
+Icon(Icons.star)
+```
+
+1. *CircleAvatar*
+```
+CircleAvatar(
+  backgroundImage: NetworkImage('(link unavailable)'),
+)
+```
+
+1. *DropdownButton*
+```
+DropdownButton(
+  value: 'Option 1',
+  onChanged: (value) {},
+  items: [
+    DropdownMenuItem(child: Text('Option 1'), value: 'Option 1'),
+  ],
+)
+```
+
+1. *SnackBar*
+```
+ScaffoldMessenger.of(context).showSnackBar(
+  SnackBar(content: Text('Hello, SnackBar!')),
+)
+```
+
+1. *Dialog*
+```
+showDialog(
+  context: context,
+  builder: (context) => AlertDialog(
+    title: Text('Dialog'),
+    content: Text('Hello, Dialog!'),
+  ),
+)
+```
+
+1. *BottomSheet*
+```
+showModalBottomSheet(
+  context: context,
+  builder: (context) => Container(
+    height: 200,
+    child: Center(child: Text('Hello, BottomSheet!')),
+  ),
+)
+```
+
+1. *Navigator*
+```
+Navigator.push(
+  context,
+  MaterialPageRoute(builder: (context) => SecondPage()),
+)
+```
+
+1. *Scaffold*
+```
+Scaffold(
+  appBar: AppBar(title: Text('Scaffold')),
+  body: Center(child: Text('Hello, Scaffold!')),
+)
+```
+
+1. *Card*
+```
+Card(
+  child: Container(
+    height: 100,
+    width: 100,
+    child: Center(child: Text('Hello, Card!')),
+  ),
+)
+```
+
